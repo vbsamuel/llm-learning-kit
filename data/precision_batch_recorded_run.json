@@ -1,0 +1,21 @@
+{
+  "batch_sweep": [
+    {"batch": 1, "throughput": 3271.6, "vram_mib": 55, "latency_ms": 0.31},
+    {"batch": 4, "throughput": 11778.5, "vram_mib": 79, "latency_ms": 0.34},
+    {"batch": 16, "throughput": 34467.6, "vram_mib": 173, "latency_ms": 0.46},
+    {"batch": 64, "throughput": 44494.9, "vram_mib": 551, "latency_ms": 1.44}
+  ],
+  "precision_summary": {
+    "fp32": {"throughput": 8856.0, "cosine_vs_fp32": 1.0},
+    "fp16": {"throughput": 16653.0, "cosine_vs_fp32": 1.0},
+    "bf16": {"throughput": 20028.0, "cosine_vs_fp32": 1.0}
+  },
+  "combined_best": {
+    "precision": "bf16",
+    "batch": 32,
+    "throughput": 29140.0,
+    "peak_vram_mib": 209,
+    "vram_budget_mib": 6963,
+    "speedup_vs_fp32_batch1": 22.54
+  }
+}
