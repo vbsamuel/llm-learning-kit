@@ -1,0 +1,37 @@
+{
+  "run_date": "2026-07-23",
+  "workload": {
+    "prompts": 24,
+    "input_tokens_per_prompt": 32000,
+    "output_tokens_per_prompt": 64,
+    "concurrency": 4,
+    "seed": 555
+  },
+  "device_cache_only": {
+    "cold_mean_ttft_s": 9.37679,
+    "warm_mean_ttft_s": 9.31517,
+    "warm_p99_ttft_s": 17.12474
+  },
+  "device_plus_host_tier": {
+    "cold_mean_ttft_s": 13.26251,
+    "warm_mean_ttft_s": 0.33635,
+    "warm_p99_ttft_s": 0.84515
+  },
+  "cache_counters": {
+    "lookup_requested_tokens": 1536000,
+    "lookup_hit_tokens": 768000
+  },
+  "single_shared_context": {
+    "context_tokens": 30000,
+    "device_cache_capacity_tokens": 40960,
+    "device_only_ttft_s": 2.871,
+    "tiered_ttft_s": 0.355,
+    "host_reloaded_tokens": 29952
+  },
+  "model_shape_for_capacity_example": {
+    "layers": 36,
+    "kv_heads": 8,
+    "head_dim": 128,
+    "bytes_per_element": 2
+  }
+}
