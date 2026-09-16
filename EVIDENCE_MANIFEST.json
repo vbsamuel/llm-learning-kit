@@ -1,0 +1,25 @@
+{
+  "artifact_standard": "evidence-first-v1",
+  "notebooks": [
+    {
+      "path": "notebooks/01_kv-cache-tiering-under-pressure.ipynb",
+      "status": "recorded measurements + backend-neutral rerun harness",
+      "claim_limit": "single recorded environment"
+    },
+    {
+      "path": "notebooks/02_dynamic-batching-under-concurrency.ipynb",
+      "status": "recorded measurements + self-contained rerun harness",
+      "claim_limit": "closed-loop synthetic concurrency workload"
+    },
+    {
+      "path": "notebooks/03_precision-batch-frontier.ipynb",
+      "status": "recorded measurements + self-contained rerun harness",
+      "claim_limit": "small transformer proxy workload"
+    },
+    {
+      "path": "notebooks/04_adaptive-optimization-under-baseline-drift.ipynb",
+      "status": "method + recorded point estimates",
+      "claim_limit": "insufficient repeated evidence for performance promotion"
+    }
+  ]
+}
