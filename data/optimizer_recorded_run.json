@@ -1,0 +1,27 @@
+{
+  "baseline_cold": 1375.208,
+  "baseline_hot": 1441.083,
+  "candidate_best": 1454.51,
+  "reported_gain_vs_cold_pct": 5.7665,
+  "gain_vs_hot_pct": 0.9317,
+  "profile": {
+    "dominant_op_pct": 88.41,
+    "bound": "memory",
+    "arithmetic_intensity": 1.55,
+    "within_roofline_pct": 68.5,
+    "gap_to_roofline_pct": 31.5
+  },
+  "workload": {
+    "concurrency": 16,
+    "input_tokens": 1024,
+    "output_tokens": 1024,
+    "precision": "bf16",
+    "tensor_parallelism": 1
+  },
+  "evidence_limitations": [
+    "single recorded point-summary rather than repeated raw trials",
+    "no repeated-run distribution",
+    "downstream accuracy evaluation did not complete",
+    "time budget ended before normal closeout"
+  ]
+}
